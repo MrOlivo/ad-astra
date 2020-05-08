@@ -29,8 +29,8 @@ img {
     max-width: 90%;
 }
 
-h2 {
-    margin: auto;
+section {
+    margin-top: 1em;
 }
 
 .weight-400 {
@@ -88,7 +88,7 @@ h2 {
 }
     
 .items {
-    margin: 1em 0;
+    margin: 0;
     /* grid-column: 1/-1; */
     display: flex;
     flex-flow: row wrap;
@@ -119,6 +119,20 @@ h2 {
     color: var(--white);
 }
 
+/* Information */
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.parche {
+    grid-column: 1/1;
+}
+
+.info-texto {
+    grid-column: 2/-1;
+}
 
 /* Footer */
 .footer {

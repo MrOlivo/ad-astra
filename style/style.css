@@ -33,6 +33,10 @@ section {
     margin-top: 1em;
 }
 
+h2 {
+    margin: auto;
+}
+
 .weight-400 {
     font-weight: 400;
 }

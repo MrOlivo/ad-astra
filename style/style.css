@@ -106,10 +106,15 @@ h2 {
     background-color: var(--navy);
     text-align: center;
 }
+/* 
+.item:hover .planet {
+    transform: rotateZ(360deg);
+} */
 
 .planet {
     margin: 1em auto;
     width: 60%;
+    /* transition-duration: 5s; */
 }
 
 .number {

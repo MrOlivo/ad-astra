@@ -29,9 +29,8 @@ img {
     max-width: 90%;
 }
 
-.viajar {
-    /* top | horizontal | bottom */
-    margin: 2em .5em 0em;
+h2 {
+    margin: auto;
 }
 
 .weight-400 {
@@ -98,8 +97,8 @@ img {
 }
 
 .item {
-    width: 20vw;
-    margin: 0.5em 0em;
+    width: 270px;
+    margin: .5em auto;
     background-color: var(--navy);
     text-align: center;
 }

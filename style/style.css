@@ -130,13 +130,13 @@ h2 {
 
 /* Information */
 
-.history {
+.history, .acerca {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .parche {
-    grid-column: 1/1;
+    grid-column: 1/2;
 }
 
 .info-texto {
@@ -145,8 +145,23 @@ h2 {
 
 
 /* About */
+.acerca {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
 #about {
     grid-column: 1/3;
+    margin: 1em;
+}
+
+.astronauta{
+    grid-column: 3/-1;
+    width: 100%;
+    height: 350px;
+    background: url("/img/38632.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 /* Footer */

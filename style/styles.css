@@ -204,7 +204,23 @@ h2 {
 
 /* Login */
 .login {
-    color: var(--white);
     width: 100%;
     max-width: 500px;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.form-element {
+    margin: 1em;
+    display: grid;
+}
+
+.label{
+    margin: .5em;
+}
+
+.input {
+    font-size: 1em;
 }

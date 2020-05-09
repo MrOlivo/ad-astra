@@ -24,9 +24,9 @@
             <form action="#" class="login item">
                 <h2 class="weight-400">iniciar sesión</h2>
 
-                <div class="form-element" data-validate="Se requiere un Usuario">
-                    <label class="label">Usuario</label>
-                    <input class="input" type="text" name="username" placeholder="Usuario">
+                <div class="form-element" data-validate="Se requiere un Correo">
+                    <label class="label">Correo</label>
+                    <input class="input" type="text" name="email" placeholder="Correo">
                 </div>
 
                 <div class="form-element" data-validate="Se requiere la Contraseña">
@@ -38,6 +38,9 @@
                     <button class="cta btn weight-600">
                         Login
                     </button>
+                </div>
+                <div>
+                    <span id="emailOK"></span>
                 </div>
             </form>
         </div>
@@ -61,6 +64,7 @@
         </div>
     </footer>
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script defer src="javascript/validador.js"></script>
 </body>
 
 </html>

@@ -103,7 +103,7 @@ h2 {
 
 .cta:hover {
     background-color: var(--navy);
-
+    color: white;
 }
 
 .cta a {
@@ -209,6 +209,7 @@ h2 {
     color: var(--white);
     background-color: var(--blue);
     padding: 1em;
+    margin: .5em;
     text-transform: uppercase;
 }
 
@@ -217,10 +218,11 @@ h2 {
     display: grid;
 }
 
-.label{
-    margin: .5em;
+.input, .btn{
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
-.input {
-    font-size: 1em;
+.btn {
+    background-color: var(--white);
 }

@@ -22,9 +22,22 @@
     <main>
         <div class="items">
             <form action="#" class="login item">
-                <div class="" data-validate="Username is required">
-                    <span class="label">Username</span>
-                    <input class="input" type="text" name="username" placeholder="Enter username">
+                <h2 class="weight-400">iniciar sesión</h2>
+
+                <div class="form-element" data-validate="Se requiere un Usuario">
+                    <label class="label">Usuario</label>
+                    <input class="input" type="text" name="username" placeholder="Usuario">
+                </div>
+
+                <div class="form-element" data-validate="Se requiere la Contraseña">
+                    <label class="label">Contraseña</label>
+                    <input class="input" type="password" name="password" placeholder="Contraseña">
+                </div>
+
+                <div class="form-element">
+                    <button>
+                        Login
+                    </button>
                 </div>
             </form>
         </div>

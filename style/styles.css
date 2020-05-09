@@ -225,3 +225,15 @@ h2 {
 .btn {
     background-color: var(--white);
 }
+
+@media (max-width: 450px) {
+    .grid, .history, .acerca {
+        display: block;
+        /* grid-template-columns: 1fr; */
+    }
+
+    .parche img {
+        max-width: 80%;
+        align-content: center;
+    }
+}

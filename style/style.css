@@ -51,6 +51,29 @@ h2 {
     gap: 1em;
 }
 
+.navbar {
+    /* vertical \ horizontal */
+    margin: .5em 0em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    padding: .5em;
+}
+
+.nav-item:hover a, .nav-item:hover{
+    color: var(--white);
+    background-color: var(--purple-light);
+}
+
+.nav-item a {
+    font-size: 1em;
+    color: var(--navy);
+}
+
+
 .header {
     margin: 0 1em;
 }

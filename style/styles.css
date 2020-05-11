@@ -203,7 +203,6 @@ h2 {
 
 /* Login */
 .login {
-    width: 100%;
     max-width: 500px;
     color: var(--white);
     background-color: var(--blue);

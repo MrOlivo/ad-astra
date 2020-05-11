@@ -28,3 +28,6 @@ Temporary Items
 
 # Prepros configuration
 *.config
+
+# Cosas que no funcionan
+height-rz.js

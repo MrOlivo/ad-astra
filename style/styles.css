@@ -34,6 +34,10 @@ h2 {
     margin: auto;
 }
 
+button {
+    border-style: none;
+}
+
 .weight-400 {
     font-weight: 400;
 }
@@ -100,7 +104,7 @@ h2 {
 }
 
 .cta:hover {
-    background-color: var(--navy);
+    background-color: black;
     color: white;
 }
 
@@ -202,9 +206,10 @@ h2 {
 
 /* Login */
 .login {
+    width: 80%;
     max-width: 500px;
     color: var(--white);
-    background-color: var(--purple);
+    background-color: var(--pink);
     padding: 1em;
     margin: .5em;
     text-transform: uppercase;

@@ -1,4 +1,3 @@
-
 document.getElementsByName('email')[0].addEventListener('keyup', function() {
     const campo = event.target;
 	const valido = document.getElementById('emailOK');

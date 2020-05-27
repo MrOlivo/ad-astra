@@ -7,3 +7,4 @@ Repositorio publico del sitio web [Ad Astra](https://mrolivo.github.io/ad-astra/
 - [x] Página de Login
 - [x] Formulario de contacto
 - [x] Adaptarse a dispositivos móviles
+- [x] Bootstrap

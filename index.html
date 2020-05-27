@@ -7,189 +7,138 @@
     <meta name="description" content="Pagina de Inicio de Ad Astra">
     <title>Ad Astra | Home</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-item"><a class="weight-600" href="/">Home</a></div>
-        <div class="nav-item"><a class="weight-600" href="#destinos">Destinos</a></div>
-        <div class="nav-item"><a class="weight-600" href="#historia">Historia</a></div>
-        <div class="nav-item"><a class="weight-600" href="#nosotros">Sobre Nosotros</a></div>
-        <div class="nav-item"><a class="weight-600" href="login.html">Login</a></div>
-        <div class="nav-item"><a class="weight-600" href="contacto.html">Contactanos</a></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">AD ASTRA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#destinos">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto.html">Contactanos</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <header class="header grid">
-        <div class="text-header">
-            <h1 class="title weight-600">Ad Astra</h1>
-            <h2 class="subtitle weight-400">Space Tourism</h2>
-            <p class="parrafo">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis labore, repudiandae exercitationem
-                fugiat libero beatae autem magni. Totam inventore, optio vitae accusamus omnis beatae vero veritatis
-                alias magni? Praesentium, itaque.
-            </p>
-            <div class="cta">
-                <a href="#">Conocer más</a>
-            </div>
-        </div>
-        <div class="img-header">
-            <img src="planetas/undraw_counting_stars_rrnl.svg" alt="Hombre contando las estrellas" class="logo">
-        </div>
-    </header>
-
     <main>
-        <section id="destinos">
-            <!--Catálogo de planetas-->
-            <h2 class="weight-400">Viaja a cualquier rincon de nuestro <b class="weight-600">Sistema Solar</b>
-            </h2>
-            <div class="items">
-                <div class="item">
-                    <div class="number weight-600">Mercurio</div>
-                    <div class="planet">
-                        <img src="planetas/mercurio.svg" alt="Planeta Mercurio" loading="lazy">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="planetas/mercurio.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">mercurio</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">Venus</div>
-                    <div class="planet">
-                        <img src="planetas/venus.svg" alt="Planeta Venus" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/venus.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">venus</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">tierra</div>
-                    <div class="planet">
-                        <img src="planetas/tierra.svg" alt="Planeta tierra" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/tierra.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">tierra</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">marte</div>
-                    <div class="planet">
-                        <img src="planetas/marte.svg" alt="Planeta marte" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/marte.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">marte</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">jupiter</div>
-                    <div class="planet">
-                        <img src="planetas/jupiter.svg" alt="Planeta jupiter" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/jupiter.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">jupiter</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">saturno</div>
-                    <div class="planet">
-                        <img src="planetas/saturno.svg" alt="Planeta saturno" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/saturno.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">saturno</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">urano</div>
-                    <div class="planet">
-                        <img src="planetas/urano.svg" alt="Planeta urano" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/urano.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">urano</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
-                <div class="item">
-                    <div class="number weight-600">neptuno</div>
-                    <div class="planet">
-                        <img src="planetas/neptuno.svg" alt="Planeta neptuno" loading="lazy">
+                <div class="col">
+                    <div class="card">
+                        <img src="planetas/neptuno.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">neptuno</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                perspiciatis sunt provident consequuntur blanditiis pariatur.</p>
+                        </div>
                     </div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                        accusamus ducimus eaque nostrum, labore provident.</p>
                 </div>
             </div>
-        </section>
-        <section id="historia" class="history">
-            <!--Historia-->
-            <div>
-                <img loading="lazy" class="parche" src="planetas/716.svg" alt="Fuera de este mundo">
-            </div>
-            <div class="info-texto">
-                <h2 class="weight-400">Pero antes un poco de <b class="weight-600">Historia</b></h2>
-                <p>
-                    La aventura espacial del hombre comenzó con el ruso Yuri Gagarin, que el 12 de abril de 1961 se
-                    convirtió en la primera persona en viajar al espacio. Gagarin viajó en la nave Vostok 1, que dio una
-                    vuelta a la Tierra en una misión que sólo duró 108 minutos.
-                </p>
-                <p>
-                    El siguiente paso lo dieron los americanos con la llegada del hombre a la Luna. El primer
-                    “alunizaje” se produjo el 20 de julio de 1969 y el primer hombre en pisarla fue Neil Armstrong. Esta
-                    misión formaba parte del proyecto “Apollo”, que logró completar 6 viajes tripulados a nuestro
-                    satélite. Los viajes se realizaron entre 1969 y 1972 y fueron 12 los astronautas que lograron pisar
-                    el suelo lunar.
-                </p>
-                <p>
-                    Dolor est sint magna pariatur dolore. Sit sunt elit incididunt nostrud laborum esse nostrud aliqua
-                    amet labore ea mollit. Consectetur cillum nisi reprehenderit nisi consequat laborum laboris mollit.
-                    Fugiat in consectetur consectetur amet mollit do id. Sint elit nostrud officia ipsum amet id.Duis
-                    consectetur qui deserunt dolore deserunt laboris laborum labore. Labore anim adipisicing aliquip qui
-                    cupidatat ut proident est dolor consequat sint. Proident amet aute incididunt id veniam proident
-                    enim minim esse proident tempor qui. Velit officia magna laboris laborum laboris duis ea occaecat
-                    sint esse dolore nostrud labore labore. Enim ex eiusmod eu ut veniam nulla sit. Aliquip do aliqua
-                    consectetur pariatur consequat officia minim eiusmod elit esse cupidatat irure. Sunt excepteur
-                    adipisicing ipsum nostrud consequat enim.
-                </p>
-            </div>
-        </section>
-        <section id="nosotros" class="acerca">
-            <!--Información de Ad Astra-->
-            <div id="about">
-                <h2 class="weight-400">Sobre <b class="weight-600">Ad Astra</b> Space Travel Agency</h2>
-                <p>
-                    Labore amet id nulla enim dolore fugiat aliquip adipisicing officia. Ea anim qui adipisicing aute
-                    commodo est aute esse cupidatat. Enim et et nostrud id enim nulla pariatur occaecat ipsum in eu
-                    esse. Non commodo exercitation laboris minim officia fugiat exercitation aliqua voluptate fugiat
-                    quis do amet.
-                </p>
-                <p>
-                    Officia elit id consectetur sit aute exercitation reprehenderit officia consequat pariatur ullamco
-                    nulla pariatur. Laborum aliquip tempor proident ex qui deserunt irure est id Lorem enim est. Sit
-                    commodo sunt magna deserunt qui minim occaecat amet ad aliqua et duis qui.
-                </p>
-                <p>
-                    Excepteur id cupidatat
-                    magna ea minim laboris laborum officia consequat aliqua. Dolore occaecat ullamco dolore tempor
-                    tempor qui non reprehenderit anim.
-                </p>
-                <p>
-                    Sunt nostrud voluptate officia velit exercitation.
-                </p>
-            </div>
-            <div class="astronauta">
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="footer">
-        <div class="about">
-            <p>
-                <span class="weight-600">Ad Astra</span>, una empresa socialmente responsable
-            </p>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i class="fi-snsuxx-facebook"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fi-xnsuxx-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i class="fi-xnsuxx-twitter"></i></a>
-            <a href="https://github.com/MrOlivo/" target="_blank" rel="noreferrer"><i class="fi-xnsuxx-github"></i></a>
-        </div>
-        <div class="creditos">
-            <span class="weight-400">Designed by: Edwin Olivo</span><br>
-        </div>
-    </footer>
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

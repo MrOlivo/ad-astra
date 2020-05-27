@@ -45,27 +45,61 @@
     </nav>
 
     <!-- Contenido -->
-    <main>
-        <!-- Contacto -->
-        <div class="bg-dark text-light py-3">
-            <div class="text-center">
-                <p class="mb-2 mt-4">Mundos inimaginables te esperan</p>
-                <h3 class="text-uppercase">iniciar sesión</h3>
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Iniciar Sesión -->
+            <div class="col">
+                <div class="bg-secondary text-light py-3">
+                    <div class="text-center">
+                        <p class="mb-2 mt-4">Mundos inimaginables te esperan</p>
+                        <h3 class="text-uppercase">iniciar sesión</h3>
+                    </div>
+                    <div class="w-75 mx-auto pt-3">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correro electronico (e-mail)</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text">ejemplo: john.doe@gmail.com</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log in</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="w-75 mx-auto pt-3">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Correro electronico (e-mail)</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie
-                            else.</small>
+            <!-- Registrarse -->
+            <div class="col">
+                <div class="bg-primary text-light py-3">
+                    <div class="text-center">
+                        <p class="mb-2 mt-4">Resgistrate ya a nuestro sitio web</p>
+                        <h3 class="text-uppercase">crear una cuenta</h3>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="w-75 mx-auto pt-3">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Nombre de usuario</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correro electronico (e-mail)</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="email">
+                                <small id="emailHelp" class="form-text">ejemplo: john.doe@gmail.com</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log in</button>
+                        </form>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                </div>
             </div>
         </div>
     </main>

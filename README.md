@@ -8,3 +8,5 @@ Repositorio publico del sitio web [Ad Astra](https://mrolivo.github.io/ad-astra/
 - [x] Formulario de contacto
 - [x] Adaptarse a dispositivos móviles
 - [x] Bootstrap
+- [ ] Imagenes en formato webp
+  - [ ] Usar etiquetas <picture>

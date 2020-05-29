@@ -8,5 +8,6 @@ Repositorio publico del sitio web [Ad Astra](https://mrolivo.github.io/ad-astra/
 - [x] Formulario de contacto
 - [x] Adaptarse a dispositivos móviles
 - [x] Bootstrap
-- [ ] Imagenes en formato webp
-  - [ ] Usar etiquetas <picture>
+- [x] Imagenes en formato webp
+  - [x] Usar etiquetas <picture>
+  - [ ] Safari (mac os) no muestra las imagenes <picture>

@@ -250,6 +250,15 @@
             </div>
         </footer>
     </div>
+    <script>
+        let isSafari = navigator.userAgent.toLocaleLowerCase().indexOf("safari") > -1;
+        if (isSafari) {
+            let img = document.createElement("img");
+            img.setAttribute('src', 'img/output-onlinepngtools.png');
+            img.classList.add('mx-auto', 'd-block');
+            document.querySelector("picture").replaceWith(img);
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

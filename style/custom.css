@@ -19,10 +19,36 @@
     margin: .5em;
 }
 
+/* Social media */
+.social a i {
+    color: #2E2E2E;
+}
+
+.fi-snsuxx-facebook:hover {
+    color: #3b5998;
+}
+
+.fi-xnsuxx-instagram:hover {
+    color: #dd2a7b;
+}
+
+.fi-xnsuxx-twitter:hover {
+    color: #08a0e9;
+}
+
+.fi-xnsuxx-github:hover {
+    color: #211f1f;
+}
+
+.fi-swsuxx-bootstrap-b:hover {
+    color: #9933CC;
+}
+
 @media (max-width: 576px) {
     .footer {
         grid-template-columns: 1fr;
     }
+
     .creditos {
         margin-top: 1em;
     }

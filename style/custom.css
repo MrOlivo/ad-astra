@@ -4,3 +4,26 @@
     background-size: cover;
     background-position: center;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em;
+}
+
+.social {
+    margin: auto;
+}
+
+.social a i svg {
+    margin: .5em;
+}
+
+@media (max-width: 576px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    .creditos {
+        margin-top: 1em;
+    }
+}

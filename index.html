@@ -39,17 +39,21 @@
                         data-target="#modalLogin">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#registro" role="button" data-toggle="modal"
+                        data-target="#modalSignUp">Pre-registro</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contactanos</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- Modal Login -->
     <div class="modal fade" id="modalLogin" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-dark text-light">
                     <h5 class="modal-title text-uppercase">iniciar sesión</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="text-danger">&times;</span>
@@ -76,8 +80,49 @@
         </div>
     </div>
 
+    <!-- Modal Sign Up -->
+    <div class="modal fade" id="modalSignUp" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title text-uppercase">pre-registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-danger">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName">Nombre(s)</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Escribe tu nombre"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Apellido(s)</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Escribe tu apellido"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Correro electronico (e-mail)</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                placeholder="Escribe tu email" required>
+                            <small id="emailHelp" class="form-text">ejemplo: john.doe@gmail.com</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="Escribe tu contraseña" required>
+                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero -->
-    <header class="jumbotron bg-dark text-light row row-cols-1 row-cols-md-2 mt-3 mx-auto">
+    <header class="jumbotron bg-dark text-light row row-cols-1 row-cols-md-2 mt-3">
         <div class="col">
             <picture>
                 <source srcset="img/output-onlinepngtools.webp">
@@ -88,13 +133,14 @@
         <div class="col">
             <h1 class="display-3">Ad Astra</h1>
             <p class="lead">Space Tourism</p>
-            <hr style="background-color: white;">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa reprehenderit eveniet id iusto nesciunt
                 quae quibusdam adipisci sapiente fugiat voluptas perferendis amet ab ad doloremque illum tenetur cumque
                 deserunt similique esse laboriosam, eum unde. Nobis ab eligendi odio ea, quasi eum, consequuntur
                 inventore quos consectetur est corporis, dignissimos numquam aperiam.</p>
+            <p>No esperes más e inicia tu registro para <em>viajar al infinito y más alla</em>...</p>
             <p class="lead">
-                <a class="btn btn-info btn-lg" href="#" role="button">Coming soon</a>
+                <a class="btn btn-info btn-lg" href="#registro" role="button" data-toggle="modal"
+                    data-target="#modalSignUp">Pre-registro</a>
             </p>
         </div>
     </header>
@@ -233,15 +279,16 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Correro electronico (e-mail)</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
-                        <small id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie
-                            else.</small>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Escribe tu email" required>
+                        <small id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="5" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="5"
+                            required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>

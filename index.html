@@ -251,7 +251,7 @@
         </footer>
     </div>
     <script>
-        let isSafari = navigator.userAgent.toLocaleLowerCase().indexOf("safari") > -1;
+        let isSafari = navigator.userAgent.toLocaleLowerCase().indexOf("safari") != -1;
         if (isSafari) {
             let img = document.createElement("img");
             img.setAttribute('src', 'img/output-onlinepngtools.png');

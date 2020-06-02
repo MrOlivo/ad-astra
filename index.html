@@ -35,15 +35,48 @@
                     <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="#login" role="button" data-toggle="modal"
+                        data-target="#modalLogin">Iniciar sesión</a>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contactanos</a>
-                </li> -->
+                </li>
             </ul>
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase">iniciar sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-danger">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail">Correro electronico (e-mail)</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                placeholder="Escribe tu email" required>
+                            <small id="emailHelp" class="form-text">ejemplo: john.doe@gmail.com</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Escribe tu contraseña" required>
+                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
     <header class="jumbotron bg-dark text-light row row-cols-1 row-cols-md-2 mt-3 mx-auto">
         <div class="col">
             <picture>
@@ -215,41 +248,30 @@
     </div>
 
     <div class="container">
-        <footer class="pt-4 my-md-5 border-top">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2" src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" alt=""
-                        width="24" height="24">
-                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Características</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cosas geniales</a></li>
-                        <li><a class="text-muted" href="#">Característica aleatoria</a></li>
-                        <li><a class="text-muted" href="#">Característica del equipo</a></li>
-                        <li><a class="text-muted" href="#">Cosas para desarrolladores</a></li>
-                        <li><a class="text-muted" href="#">Otro</a></li>
-                        <li><a class="text-muted" href="#">Última vez</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Recursos</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="https://www.freepik.com/">Freepik.com</a></li>
-                        <li><a class="text-muted" href="https://getbootstrap.com/">Bootstrap</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md">
-                    <h5>Acerca de</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Sitio web creado por &copy;Edwin Olivo</a></li>
-                        <li><a href="" class="text-muted">Universidad Autónoma de Nayarit</a></li>
-                    </ul>
-                </div>
+        <footer class="footer pt-4 my-md-5 text-center">
+            <div class="acerca">
+                <h5>Acerca de</h5>
+                <span><strong>Ad Astra</strong>, una empresa socialmente responsable</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i
+                        class="fi-snsuxx-facebook text-dark"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i
+                        class="fi-xnsuxx-instagram text-dark"></i></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i
+                        class="fi-xnsuxx-twitter text-dark"></i></a>
+                <a href="https://github.com/MrOlivo/" target="_blank" rel="noreferrer"><i
+                        class="fi-xnsuxx-github text-dark"></i></a>
+            </div>
+            <div class="creditos">
+                <h5>Creditos</h5>
+                <span>Sitio web creado por: <strong>Edwin Olivo</strong>&copy;</span><br>
+                <a href="http://www.uan.edu.mx" class="text-muted">Universidad Autónoma de Nayarit</a>
             </div>
         </footer>
     </div>
+
+    <!-- Script -->
     <script>
         let isSafari = navigator.userAgent.toLocaleLowerCase().indexOf("safari") != -1;
         if (isSafari) {
@@ -259,7 +281,7 @@
             document.querySelector("picture").replaceWith(img);
         }
     </script>
-
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
